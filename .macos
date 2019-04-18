@@ -90,7 +90,10 @@ brew tap homebrew/cask-fonts
 brew cask install font-inconsolata
 brew cask install font-open-sans
 
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew update
+brew upgrade
+brew-cask-upgrade
+brew cleanup
 brew cask cleanup
 mas upgrade
 
