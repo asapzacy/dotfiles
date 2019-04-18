@@ -38,10 +38,9 @@ brew install mas
 brew install python
 brew install tree
 brew install vim
-brew install yarn --without-node
+brew install yarn --ignore-dependencies
 brew install colordiff
 brew install the_silver_searcher
-brew install 
 
 echo "Installing brew cask..."
 brew tap caskroom/cask
