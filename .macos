@@ -3,6 +3,9 @@
 HOSTNAME="asapzacy"
 TIMEZONE="America/Los_Angeles"
 
+# start from root, not where script is executed
+cd ~
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -14,11 +17,10 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
-mkdir code
-mdkir dev
-mkdir dev/fonts
-mkdir scripts
-touch .hushlogin
+mkdir ~/code
+mkdir ~/dev
+mkdir ~/dev/fonts
+touch ~/.hushlogin
 
 ####
 # Homebrew
